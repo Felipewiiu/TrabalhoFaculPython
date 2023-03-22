@@ -6,7 +6,7 @@ for x in range(4):
     print('Média parcial', media/4)
     print("")
 
-print('Sua média final é: ',media / 4, 'Parabéns!')
+print('Sua média final é: ', media / 4, 'Parabéns!')
 
 
 

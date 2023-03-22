@@ -22,3 +22,5 @@ print(" -- Salario líquido à receber: R$:", liquido)
 
 
 
+
+
