@@ -1,4 +1,13 @@
-notas = int(input("Digite sua nota do bimestre"))
+media = float(0)
 
-for media in range(4):
-    notas
+for x in range(4):
+    notas = int(input("Digite suas notas do bimestre: "))
+    media += notas
+    print('Média parcial', media/4)
+    print("")
+
+print('Sua média final é: ',media / 4, 'Parabéns!')
+
+
+
+
