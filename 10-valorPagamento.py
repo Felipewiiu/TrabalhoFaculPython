@@ -1,18 +1,30 @@
 prestacao = 1
+relatorio = []
+atrasoDia = 0
 
 
 def ValorPagamemto (atrasoDia, prestacao):
-    if atrasoDia != 0:
-        prestacao
+    if atrasoDia == 0:
+         return prestacao
     else:
-         valor = (prestacao + (prestacao * 0.03) ) + (prestacao * 0.01) * atrasoDia
-         print(f"Valor a ser pago: {valor}")
+         return (prestacao + (prestacao * 0.03) ) + (prestacao * 0.01) * atrasoDia
+
 
 while prestacao != 0:
-    if prestacao != 0:
-        prestacao = int(input("Digite o número de prestação: "))
+        prestacao = float(input("Digite o valor da prestação: "))
+        if prestacao == 0:
+            print("\n====== Relatório do dia =====\n")
+            quantidadePrestacao = len(relatorio)
+            ValorTotalPrestacao= sum(relatorio)
+            print(f"Quantidade de prestações pagas no dia: {quantidadePrestacao}")
+            print(f"Valor total das prestações pagas no dia R$: {ValorTotalPrestacao} reais")
+            print("\n==============================")
+            exit()
         atrasoDia = int(input("digie quantos dias em atraso: "))
-        ValorPagamemto(prestacao, atrasoDia)
+        relatorio.append(ValorPagamemto(atrasoDia, prestacao))
+        print(f"Valor a ser pago é: {ValorPagamemto(atrasoDia, prestacao)} reais")
+
+
 
 
 
