@@ -24,6 +24,8 @@ while prestacao != 0:
         relatorio.append(ValorPagamemto(atrasoDia, prestacao))
         print(f"Valor a ser pago é: {ValorPagamemto(atrasoDia, prestacao)} reais")
 
+        #t
+
 
 
 
